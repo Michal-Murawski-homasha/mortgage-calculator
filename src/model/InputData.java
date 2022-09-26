@@ -11,6 +11,37 @@ public class InputData {
     private TypeInstalments typeInstalments = TypeInstalments.CONSTANT;
     private BigDecimal bankMargin = new BigDecimal(1.9);
 
+
+    public InputData withRepaymentStartDay(LocalDate repaymentStartDay) {
+        this.repaymentStartDay = repaymentStartDay;
+        return this;
+    }
+    public InputData withWiborPercent(BigDecimal wiborPercent) {
+        this.wiborPercent = wiborPercent;
+        return this;
+    }
+    public InputData withAmount(BigDecimal amount) {
+        this.amount = amount;
+        return this;
+    }
+    public InputData withNumberInstalments(BigDecimal numberInstalments) {
+        this.numberInstalments = numberInstalments;
+        return this;
+    }
+    public InputData withTypeInstalments(TypeInstalments typeInstalments) {
+        this.typeInstalments = typeInstalments;
+        return this;
+    }
+    public InputData withBankMargin(BigDecimal bankMargin) {
+        this.bankMargin = bankMargin;
+        return this;
+    }
+
+
+
+
+
+
     public LocalDate getRepaymentStartDay() {
         return repaymentStartDay;
     }
