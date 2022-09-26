@@ -1,4 +1,6 @@
 import model.InputData;
+import service.PrintingService;
+import service.PrintingServiceImplementation;
 
 import java.math.BigDecimal;
 
@@ -7,5 +9,8 @@ public class Main {
         InputData inputData = new InputData()
                 .withAmount(new BigDecimal(2980000))
                 .withNumberInstalments(BigDecimal.valueOf(160));
+
+        PrintingService printingService = new PrintingServiceImplementation();
+        printingService.printInputDateInfo(inputData);
     }
 }
