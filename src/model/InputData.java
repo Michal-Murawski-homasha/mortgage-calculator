@@ -1,15 +1,18 @@
 package model;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.time.LocalDate;
 
 public class InputData {
+    public static final BigDecimal PERCENT = BigDecimal.valueOf(100);
+
     private LocalDate repaymentStartDay = LocalDate.of(2022, 10, 10);
     private BigDecimal wiborPercent = new BigDecimal(1.73);
     private BigDecimal amount = new BigDecimal(300000);
     private BigDecimal numberInstalments = new BigDecimal(180);
     private TypeInstalments typeInstalments = TypeInstalments.CONSTANT;
-    private BigDecimal bankMargin = new BigDecimal(1.9);
+    private BigDecimal bankMarginPercent = new BigDecimal(1.9);
 
 
     public InputData withRepaymentStartDay(LocalDate repaymentStartDay) {
@@ -32,23 +35,15 @@ public class InputData {
         this.typeInstalments = typeInstalments;
         return this;
     }
-    public InputData withBankMargin(BigDecimal bankMargin) {
-        this.bankMargin = bankMargin;
+    public InputData withBankMarginPercent(BigDecimal bankMarginPercent) {
+        this.bankMarginPercent = bankMarginPercent;
         return this;
     }
-
-
-
-
-
 
     public LocalDate getRepaymentStartDay() {
         return repaymentStartDay;
     }
 
-    public BigDecimal getWiborPercent() {
-        return wiborPercent;
-    }
 
     public BigDecimal getAmount() {
         return amount;
@@ -62,7 +57,10 @@ public class InputData {
         return typeInstalments;
     }
 
-    public BigDecimal getBankMargin() {
-        return bankMargin;
+    public BigDecimal getInterestPercent() {
+        return wiborPercent.add(bankMarginPercent);
+    }
+    public BigDecimal getInterestDisplay() {
+        return wiborPercent.add(bankMarginPercent).divide(PERCENT, 2, RoundingMode.HALF_UP);
     }
 }
