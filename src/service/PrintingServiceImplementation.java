@@ -5,6 +5,7 @@ import model.InputData;
 public class PrintingServiceImplementation implements PrintingService {
 
     @Override
+    @SuppressWarnings("StringBufferReplaceableByString")
     public void printInputDateInfo(InputData inputData) {
         StringBuilder msg = new StringBuilder(NEW_LINE);
         msg.append(MORTGAGE_AMOUNT).append(inputData.getAmount()).append(CURRENCY);
@@ -14,10 +15,10 @@ public class PrintingServiceImplementation implements PrintingService {
         msg.append(INTEREST).append(inputData.getInterestDisplay()).append(PERCENT);
         msg.append(NEW_LINE);
 
-        printMassage(msg);
+        printMassage(msg.toString());
     }
 
-    private void printMassage(StringBuilder sb) {
+    private void printMassage(String sb) {
         System.out.println(sb);
     }
 }

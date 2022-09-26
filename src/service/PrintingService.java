@@ -11,7 +11,7 @@ public interface PrintingService {
     String MONTH = " MIESIĘCY";
     String DAY = " DZIEŃ";
     String INSTALMENT = "RATA: ";
-    String INTEREST = "ODSETKI: ";
+    String INTEREST = "OPROCENTOWANIE: ";
     String CAPITAL = "KAPITAŁ: ";
     String LEFT = "POZOSTAŁO: ";
     String MORTGAGE_AMOUNT = "KWOTA KREDYTU: ";
