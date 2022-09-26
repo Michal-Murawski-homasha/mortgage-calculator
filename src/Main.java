@@ -1,8 +1,5 @@
 import model.InputData;
-import service.MortgageCalculationService;
-import service.MortgageCalculationServiceImplementation;
-import service.PrintingService;
-import service.PrintingServiceImplementation;
+import service.*;
 
 import java.math.BigDecimal;
 
@@ -13,7 +10,9 @@ public class Main {
                 .withNumberInstalments(BigDecimal.valueOf(160));
 
         PrintingService printingService = new PrintingServiceImplementation();
-        MortgageCalculationService mortgageCalculationService = new MortgageCalculationServiceImplementation(printingService);
+        InstalmentCalculationService instalmentCalculationService = new InstalmentCalculationServiceImplements();
+
+        MortgageCalculationService mortgageCalculationService = new MortgageCalculationServiceImplementation(printingService, instalmentCalculationService);
         mortgageCalculationService.calculate(inputData);
     }
 }
