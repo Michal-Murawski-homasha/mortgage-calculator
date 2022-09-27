@@ -9,10 +9,10 @@ public class Main {
                 .withAmount(new BigDecimal(2980000))
                 .withNumberInstalments(BigDecimal.valueOf(160));
 
-        PrintingService printingService = new PrintingServiceImplementation();
-        InstalmentCalculationService instalmentCalculationService = new InstalmentCalculationServiceImplements();
+        IPrintingService printingService = new PrintingService();
+        IInstalmentCalculationService instalmentCalculationService = new InstalmentCalculationService();
 
-        MortgageCalculationService mortgageCalculationService = new MortgageCalculationServiceImplementation(printingService, instalmentCalculationService);
+        IMortgageCalculationService mortgageCalculationService = new MortgageCalculationService(printingService, instalmentCalculationService);
         mortgageCalculationService.calculate(inputData);
     }
 }
