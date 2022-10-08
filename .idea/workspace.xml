@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5a93a19-54b9-4c0a-8e3d-4e1b8ec4439e" name="Changes" comment="Created new classes">
-      <change afterPath="$PROJECT_DIR$/src/service/IInstalmentCalculationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/IMortgageCalculationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/IPrintingService.java" afterDir="false" />
+    <list default="true" id="f5a93a19-54b9-4c0a-8e3d-4e1b8ec4439e" name="Changes" comment="Rename interfaces and classes">
+      <change afterPath="$PROJECT_DIR$/src/service/InstalmentAmountsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/InstalmentAmountsServiceImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/MortgageResidualService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/MortgageResidualServiceImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/TimePointService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/TimePointServiceImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/InstalmentCalculationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/InstalmentCalculationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/InstalmentCalculationServiceImplements.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/MortgageCalculationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/MortgageCalculationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/MortgageCalculationServiceImplementation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/PrintingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/PrintingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/PrintingServiceImplementation.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,17 +37,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Language Defaults"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="model" />
       <recent name="service" />
+      <recent name="model" />
     </key>
   </component>
   <component name="RunManager">
@@ -166,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664233560797</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Rename interfaces and classes">
+      <created>1664276832588</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1664276832588</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,6 +200,7 @@
     <MESSAGE value="Adding new classes and interface" />
     <MESSAGE value="Adding new class" />
     <MESSAGE value="Created new classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created new classes" />
+    <MESSAGE value="Rename interfaces and classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename interfaces and classes" />
   </component>
 </project>
