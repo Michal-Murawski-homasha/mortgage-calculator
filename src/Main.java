@@ -1,7 +1,4 @@
 import model.InputData;
-import model.InstalmentAmounts;
-import model.MortgageResidual;
-import model.TimePoint;
 import service.*;
 
 import java.math.BigDecimal;
@@ -12,14 +9,14 @@ public class Main {
                 .withAmount(new BigDecimal(2980000))
                 .withNumberInstalments(BigDecimal.valueOf(160));
 
-        IPrintingService printingService = new PrintingService();
-        IInstalmentCalculationService instalmentCalculationService = new InstalmentCalculationService(
+        PrintingService printingService = new PrintingServiceImplementation();
+        InstalmentCalculationService instalmentCalculationService = new InstalmentCalculationServiceImplementation(
                 new TimePointServiceImplementation(),
                 new InstalmentAmountsServiceImplementation(),
                 new MortgageResidualServiceImplementation()
         );
 
-        IMortgageCalculationService mortgageCalculationService = new MortgageCalculationService(printingService, instalmentCalculationService);
+        MortgageCalculationService mortgageCalculationService = new MortgageCalculationServiceImplementation(printingService, instalmentCalculationService);
         mortgageCalculationService.calculate(inputData);
     }
 }

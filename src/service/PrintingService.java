@@ -2,23 +2,22 @@ package service;
 
 import model.InputData;
 
-public class PrintingService implements IPrintingService {
+public interface PrintingService {
+    String INTEREST_SUM = "SUMA ODSETEK";
+    String NUMBER_INSTALMENT = "NR: ";
+    String YEAR = "ROK: ";
+    String MONTH = " MIESIĘCY";
+    String DAY = " DZIEŃ";
+    String INSTALMENT = "RATA: ";
+    String INTEREST = "OPROCENTOWANIE: ";
+    String CAPITAL = "KAPITAŁ: ";
+    String LEFT = "POZOSTAŁO: ";
+    String MORTGAGE_AMOUNT = "KWOTA KREDYTU: ";
+    String MORTGAGE_PERIOD = "OKRES KREDYTOWANIA: ";
 
-    @Override
-    @SuppressWarnings("StringBufferReplaceableByString")
-    public void printInputDateInfo(InputData inputData) {
-        StringBuilder msg = new StringBuilder(NEW_LINE);
-        msg.append(MORTGAGE_AMOUNT).append(inputData.getAmount()).append(CURRENCY);
-        msg.append(NEW_LINE);
-        msg.append(MORTGAGE_PERIOD).append(inputData.getNumberInstalments()).append(MONTH);
-        msg.append(NEW_LINE);
-        msg.append(INTEREST).append(inputData.getInterestDisplay()).append(PERCENT);
-        msg.append(NEW_LINE);
+    String CURRENCY = "PLN";
+    String NEW_LINE = "\n";
+    String PERCENT = "%";
 
-        printMassage(msg.toString());
-    }
-
-    private void printMassage(String sb) {
-        System.out.println(sb);
-    }
+    void printInputDateInfo(final InputData inputData);
 }

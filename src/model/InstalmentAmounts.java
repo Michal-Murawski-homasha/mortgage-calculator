@@ -24,4 +24,13 @@ public class InstalmentAmounts {
     public BigDecimal getCapitalAmount() {
         return capitalAmount;
     }
+
+    @Override
+    public String toString() {
+        return "InstalmentAmounts{" +
+                "instalmentAmount=" + instalmentAmount +
+                ", interestAmount=" + interestAmount +
+                ", capitalAmount=" + capitalAmount +
+                '}';
+    }
 }

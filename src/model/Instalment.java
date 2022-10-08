@@ -30,4 +30,12 @@ public class Instalment {
     public MortgageResidual getMortgageResidual() {
         return mortgageResidual;
     }
+
+    @Override
+    public String toString() {
+        return "Instalment{" +
+                "instalmentAmounts=" + instalmentAmounts +
+                ", mortgageResidual=" + mortgageResidual +
+                '}';
+    }
 }
