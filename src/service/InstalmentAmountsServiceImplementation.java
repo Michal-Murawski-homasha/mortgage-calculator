@@ -3,6 +3,7 @@ package service;
 import model.InputData;
 import model.Instalment;
 import model.InstalmentAmounts;
+import model.exception.InstalmentCalculationException;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -18,7 +19,7 @@ public class InstalmentAmountsServiceImplementation implements InstalmentAmounts
             case DECREASING:
                 return instalmentCalculateDecreasing(inputData);
             default:
-                throw new RuntimeException("Case not handled");
+                throw new InstalmentCalculationException();
         }
     }
 
@@ -30,7 +31,7 @@ public class InstalmentAmountsServiceImplementation implements InstalmentAmounts
             case DECREASING:
                 return instalmentCalculateDecreasing(inputData, previousInstalment);
             default:
-                throw new RuntimeException("Case not handled");
+                throw new InstalmentCalculationException();
         }
     }
 

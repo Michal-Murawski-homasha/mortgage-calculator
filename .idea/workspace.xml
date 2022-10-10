@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5a93a19-54b9-4c0a-8e3d-4e1b8ec4439e" name="Changes" comment="Creates new interfaces and classes">
-      <change afterPath="$PROJECT_DIR$/src/service/InstalmentCalculationServiceImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/MortgageCalculationServiceImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/PrintingServiceImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Instalment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Instalment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/InstalmentAmounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/InstalmentAmounts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/MortgageResidual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/MortgageResidual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/IInstalmentCalculationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/IMortgageCalculationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/IPrintingService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/InstalmentAmountsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/InstalmentAmountsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/InstalmentAmountsServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/InstalmentAmountsServiceImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/InstalmentCalculationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/InstalmentCalculationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/MortgageCalculationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/MortgageCalculationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/MortgageResidualService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/MortgageResidualService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/MortgageResidualServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/MortgageResidualServiceImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/PrintingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/PrintingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/TimePointService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/TimePointService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/TimePointServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/TimePointServiceImplementation.java" afterDir="false" />
-    </list>
+    <list default="true" id="f5a93a19-54b9-4c0a-8e3d-4e1b8ec4439e" name="Changes" comment="Calculates constant and decreasing installments" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -190,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665251657712</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Calculates constant and decreasing installments">
+      <created>1665266154713</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1665266154713</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,6 +206,7 @@
     <MESSAGE value="Created new classes" />
     <MESSAGE value="Rename interfaces and classes" />
     <MESSAGE value="Creates new interfaces and classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creates new interfaces and classes" />
+    <MESSAGE value="Calculates constant and decreasing installments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Calculates constant and decreasing installments" />
   </component>
 </project>
